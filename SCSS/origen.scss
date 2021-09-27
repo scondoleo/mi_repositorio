@@ -1,0 +1,28 @@
+* {margin: 0; padding: 0;
+}
+
+@import "navegador" ;
+@import "maintitles" ;
+@import "footer" ;
+@import "mediaqueries" ;
+@import "aliados";
+@import "contacto";
+@import "productos";
+@import "servicios";
+@import "eshop";
+
+
+$background: rgb(255, 255, 255);
+
+
+body {
+    background-color: $background;
+}
+
+
+
+
+
+
+
+

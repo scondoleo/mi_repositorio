@@ -1,0 +1,25 @@
+    /* PageProducto */
+
+    .sectionMainProducto {
+        animation-duration: 1s;
+        animation-name: main_producto;
+        animation-timing-function: ease-in;
+        animation-iteration-count: initial;
+        }
+            
+        @keyframes main_producto {
+        0%{
+        opacity: 0;
+        }
+        100% {
+        opacity: 1;
+        }
+        }
+        
+        .imgProductos1 {
+        padding: auto;
+        margin: 30px;
+        width: 45%;
+        display: inline;
+        align-items: center;
+        }

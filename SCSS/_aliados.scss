@@ -1,0 +1,76 @@
+    /* PageAliados */
+
+    .imgAliados1 {
+        padding: auto;
+        margin: 40px 95px 40px 95px;
+        height: 300px;
+        width: 500px;
+        display: inline;
+        align-items: center;    
+        animation-duration: 2s;
+        animation-name: logo_aliados;
+        animation-timing-function: ease-in;
+        animation-iteration-count: initial;
+        transform: translate(10px, 20px);
+        }
+        
+        @keyframes logo_aliados {
+        0%{
+            opacity: 0;
+        }
+        
+        20%{
+            opacity: 0.2;
+        }
+        
+        50%{
+            opacity: 0.5;
+        }
+        
+        80%{
+            opacity: 0.8;
+        }
+        
+        100% {
+            opacity: 1;
+        }
+        
+        }
+        
+        .imgAliados2 {
+        padding: auto;
+        margin: 30px 30px 30px 30px;
+        height: 300px;
+        width: 450px;
+        display: inline;
+        align-items: center;
+        animation-name: logo_aliados_2;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: initial;
+        transform: translate(10px, 20px);
+        }
+        
+        @keyframes logo_aliados_2 {
+        0%{
+            opacity: 0;
+        }
+        
+        20%{
+            opacity: 0.2;
+        }
+        
+        50%{
+            opacity: 0.5;
+        }
+        
+        80%{
+            opacity: 0.8;
+        }
+        
+        100% {
+            opacity: 1;
+        }
+        
+        }
+        

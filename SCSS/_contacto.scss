@@ -1,0 +1,57 @@
+/* Variables */
+
+
+/* Ops */
+
+@mixin font_contacto {
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* PageContacto */
+
+
+    .sectionMainContact {
+        animation-duration: 1s;
+        animation-name: main_contact;
+        animation-timing-function: ease-in;
+        animation-iteration-count: initial;
+        }
+        
+        @keyframes main_contact {
+        0%{
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        
+        }
+        }
+        
+        .pClassFormulario {
+        margin: 20px;
+        line-height: 1.6;
+        @include font_contacto
+        }
+        
+        .lista_3 {
+        margin-left: 100px;
+        display: inline-block;
+        text-align: center;
+        @include font_contacto
+        }
+        
+        .liTitulo {
+        text-align: left;
+        display: inline-block;
+        text-align: left;
+        @include font_contacto
+        }
+        
+        .botonFormulario {
+        margin: 10px 280px 10px 280px;
+        display: inline;
+        text-align: center;
+        @include font_contacto
+        }

@@ -1,0 +1,67 @@
+/* Variables */
+
+
+/* Ops */
+
+@mixin tabla_letraestilo {
+    padding: 20px;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid black;
+}
+
+@mixin tabla_letraestilo_2 {
+    padding-left: 10px;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* PageEshop */
+
+
+
+.sectionMainEShop {
+    animation-duration: 1s;
+    animation-name: main_eshop;
+    animation-timing-function: ease-in;
+    animation-iteration-count: initial;
+    }
+    
+    @keyframes main_eshop {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    }
+    
+    
+    .table {
+    border-collapse: collapse;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(0, 0, 0);
+    width: 90%;
+    align-items: center;
+    }
+    
+    th {
+    @include tabla_letraestilo;
+    }
+    
+    td {
+    @include tabla_letraestilo;
+    text-align: center;
+    }
+    
+    #precio {
+    @include tabla_letraestilo_2 ;
+    }
+    
+    
+    .h3_2 {
+    @include tabla_letraestilo_2 
+    }
