@@ -5,6 +5,14 @@
         animation-name: main_producto;
         animation-timing-function: ease-in;
         animation-iteration-count: initial;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 35% 35% 35%;
+        grid-template-areas: 
+        "imgProductos1 imgProductos2"
+        "imgProductos3 imgProductos4"
+        "imgProductos5 imgProductos6"
+        ;
         }
             
         @keyframes main_producto {
@@ -18,8 +26,43 @@
         
         .imgProductos1 {
         padding: auto;
-        margin: 30px;
-        width: 45%;
-        display: inline;
+        margin: 2%;
+        width: 90%;
         align-items: center;
+        grid-area: imgProductos1;
+        }
+        .imgProductos2 {
+            padding: auto;
+            margin: 2%;
+            width: 90%;
+            align-items: center;
+            grid-area: imgProductos2;
+        }
+        .imgProductos3{
+            padding: auto;
+            margin: 2%;
+            width: 90%;
+            align-items: center;
+            grid-area: imgProductos3;
+        }
+        .imgProductos4 {
+            padding: auto;
+            margin: 2%;
+            width: 90%;
+            align-items: center;
+            grid-area: imgProductos4;
+        }
+        .imgProductos5 {
+            padding: auto;
+            margin: 2%;
+            width: 90%;
+            align-items: center;
+            grid-area: imgProductos5;
+        }
+        .imgProductos6 {
+            padding: auto;
+            margin: 2%;
+            width: 90%;
+            align-items: center;
+            grid-area: imgProductos6;
         }

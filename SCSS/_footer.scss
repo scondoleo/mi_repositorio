@@ -26,9 +26,9 @@
     }
     
     .footer_h3 {
-    padding: 10px;
     font-weight: bolder;
     font-family: 'Roboto', sans-serif;
+    margin: 5%;
     
     /*  */
     
@@ -39,8 +39,7 @@
     }
     
     .footer_sectionDesc {
-    grid-area: desc;
-    
+        grid-area: desc;
     } 
     
 
@@ -63,7 +62,6 @@
         text-decoration: none;
         /* margin: 0px 40px 0px 40px; */
         text-align: center;
-        padding: 20px;
         font-family: 'Montserrat', sans-serif;
         }
         
@@ -71,7 +69,7 @@
         .footer_linkRedes {
         text-decoration: none;
         color:black;
-        padding: 20px;
+        padding: 2%;
         }
 
 
@@ -98,8 +96,6 @@
     
     
     .p_2 {
-    margin: 10px 10px 10px 10px;
-    padding: 10px;
     font-family: 'Montserrat', sans-serif;
     word-break: break-all;
     }

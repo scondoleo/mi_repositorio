@@ -1,14 +1,15 @@
         /**** MainTitles_1 ****/
 
         h1 {
+            width: 100%;
             color: #212121;
-            margin: 20px;
+            margin: 5%;
             text-align: center;
             font-family: 'Montserrat', sans-serif;
-            font-size: 50px;
-            border-top: solid 1px #c9c9c9;
-            border-bottom: solid 1px #c9c9c9;
-            padding: 10px;
+            font-size: 1rem;
+/*             border-top: solid 1px #c9c9c9;
+            border-bottom: solid 1px #c9c9c9; */
+            padding: 2%;
         
             animation-duration: 1s;
             animation-name: h1_main;
@@ -27,34 +28,29 @@
         }
         
          .sectionMainTittle {
-            width: 1200px;
+            width: 100%;
             display: grid;
-            grid-template-areas: "img h1";
             justify-content: center;
             align-items: center;
-            grid-template-columns: 20% 80%;
-        
+
         }
         
         .maintitle_h1Index {
-            height: 100px;
-            width: 1100px;
+            width: 100%;
             color: #212121;
             margin: 20px;
             text-align: center;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 50px;
-            border-top: solid 1px #c9c9c9;
-            border-bottom: solid 1px #c9c9c9;
+            font-family: 'Montserrat Subrayada', sans-serif;
+            font-size: 3rem;
+
             grid-area: h1;
             justify-items: center;
             
         }
         
          .maintitles_h1logo {
-            
-            height: 250px;
-            width: 250px;
+            height: 50px;
+            width: 50px;
             margin-left: 5px;
             grid-area: img;
             justify-items: start;
@@ -64,10 +60,11 @@
         
         
         .maintitles_h1logo:hover {
-            height: 200px; width: 200px;
+            height: 90px; width: 90px;
             padding: 20px;
         }
         
+
         /* @keyframes h1_logo {
             0%{
                 opacity: 0;
@@ -79,12 +76,14 @@
         } */
         
         .maintitles_carousel {
-            margin: 50px;
+            margin: 10%;
             justify-items: center;
             align-items: center;
-            width: 90%;
-            height: 80%;
+            width: 80%;
+            height: 70%;
         }
+
+
 
         /* MainTitles_3 */
         .maintitles_sectionMainText {
@@ -120,16 +119,16 @@
         
         
         p {
-        margin: 20px;
+        margin: 5%;
         line-height: 2.5;
-        padding: 20px;
+        padding: 2%;
         font-family: 'Montserrat', sans-serif;
         }
         
         .maintitles_p1 {
-        padding: 20px;
+        padding: 2%;
         font-family: 'Montserrat', sans-serif;
-        
+        font-size: 1.5rem;
         }
         
         .maintitles_presentacionIndex {

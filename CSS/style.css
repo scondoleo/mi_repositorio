@@ -3,83 +3,51 @@
   padding: 0; }
 
 /*******  Barra de Navegacion *******/
-.navbar_navegador {
+nav {
+  width: 100%;
+  z-index: 3;
   position: fixed;
-  top: 5px;
-  right: 40px;
-  left: 40px; }
+  align-items: center;
+  transition: all 1s; }
 
-.navbar_lista1 {
+.nav-item:hover {
+  color: black; }
+
+.navbar-nav {
+  flex-direction: row; }
+
+.nav-link {
   text-decoration: none;
   list-style-type: none;
   list-style: none;
   text-align: center;
-  font-size: 0;
-  background-color: #e6e6e6;
-  border-radius: #c9c9c9 1px solid;
-  transition: all 1s; }
-
-.navbar_lista1:hover {
-  background-color: #757575;
-  color: #ececec; }
-
-.navabar_lista2 {
-  text-decoration: none;
-  margin: 0px 40px 0px 40px;
-  text-align: center;
-  padding: 10px 20px 10px 20px;
-  font-family: 'Montserrat', sans-serif;
   display: inline-block;
-  position: relative;
-  font-size: 14px; }
-
-.navbar_linknav {
   text-decoration: none;
-  color: black;
-  transition: all 0.5s;
-  padding: 10px; }
-
-.navbar_linknav:hover {
-  color: #ececec; }
-
-.navbar_subLista {
-  height: 100px;
-  position: fixed;
-  display: none;
-  color: #c9c9c9; }
-
-.navbar_subLista1 {
-  text-decoration: none;
-  list-style-type: none;
-  list-style: none;
   text-align: center;
-  border: #c9c9c9 solid 1px;
-  background-color: #2c2c2c;
-  font-size: 14px;
+  padding-left: 1%;
+  padding-right: 1%;
   font-family: 'Montserrat', sans-serif;
-  padding: 10px;
-  transition: all 1s; }
+  position: relative;
+  font-size: 1rem; }
 
-.navbar_subListaLink {
-  height: 100px;
-  color: #c9c9c9;
-  text-decoration: none; }
+.navbar-collapse {
+  display: flex !important;
+  flex-basis: auto; }
 
-ul li:hover ul {
-  height: 200px;
-  display: block;
-  transition: all 2s; }
+.navbar-toggler {
+  display: none; }
 
 /**** MainTitles_1 ****/
 h1 {
+  width: 100%;
   color: #212121;
-  margin: 20px;
+  margin: 5%;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 50px;
-  border-top: solid 1px #c9c9c9;
-  border-bottom: solid 1px #c9c9c9;
-  padding: 10px;
+  font-size: 1rem;
+  /*             border-top: solid 1px #c9c9c9;
+            border-bottom: solid 1px #c9c9c9; */
+  padding: 2%;
   animation-duration: 1s;
   animation-name: h1_main;
   animation-timing-function: ease-in;
@@ -92,29 +60,24 @@ h1 {
     opacity: 1; } }
 
 .sectionMainTittle {
-  width: 1200px;
+  width: 100%;
   display: grid;
-  grid-template-areas: "img h1";
   justify-content: center;
-  align-items: center;
-  grid-template-columns: 20% 80%; }
+  align-items: center; }
 
 .maintitle_h1Index {
-  height: 100px;
-  width: 1100px;
+  width: 100%;
   color: #212121;
   margin: 20px;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 50px;
-  border-top: solid 1px #c9c9c9;
-  border-bottom: solid 1px #c9c9c9;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-size: 3rem;
   grid-area: h1;
   justify-items: center; }
 
 .maintitles_h1logo {
-  height: 250px;
-  width: 250px;
+  height: 50px;
+  width: 50px;
   margin-left: 5px;
   grid-area: img;
   justify-items: start;
@@ -122,8 +85,8 @@ h1 {
   transition: all 2s; }
 
 .maintitles_h1logo:hover {
-  height: 200px;
-  width: 200px;
+  height: 90px;
+  width: 90px;
   padding: 20px; }
 
 /* @keyframes h1_logo {
@@ -136,11 +99,11 @@ h1 {
             }
         } */
 .maintitles_carousel {
-  margin: 50px;
+  margin: 10%;
   justify-items: center;
   align-items: center;
-  width: 90%;
-  height: 80%; }
+  width: 80%;
+  height: 70%; }
 
 /* MainTitles_3 */
 .maintitles_sectionMainText {
@@ -167,14 +130,15 @@ h3 {
 
 /* Paragraphs */
 p {
-  margin: 20px;
+  margin: 5%;
   line-height: 2.5;
-  padding: 20px;
+  padding: 2%;
   font-family: 'Montserrat', sans-serif; }
 
 .maintitles_p1 {
-  padding: 20px;
-  font-family: 'Montserrat', sans-serif; }
+  padding: 2%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem; }
 
 .maintitles_presentacionIndex {
   display: grid;
@@ -204,9 +168,9 @@ p {
   /*     grid-gap: 10px; */ }
 
 .footer_h3 {
-  padding: 10px;
   font-weight: bolder;
   font-family: 'Roboto', sans-serif;
+  margin: 5%;
   /*  */
   grid-area: h3Footer;
   justify-items: start;
@@ -229,13 +193,12 @@ p {
   text-decoration: none;
   /* margin: 0px 40px 0px 40px; */
   text-align: center;
-  padding: 20px;
   font-family: 'Montserrat', sans-serif; }
 
 .footer_linkRedes {
   text-decoration: none;
   color: black;
-  padding: 20px; }
+  padding: 2%; }
 
 .footer_sectionMAP {
   display: grid;
@@ -253,8 +216,6 @@ p {
     animation-duration: 2s; } }
 
 .p_2 {
-  margin: 10px 10px 10px 10px;
-  padding: 10px;
   font-family: 'Montserrat', sans-serif;
   word-break: break-all; }
 
@@ -264,19 +225,22 @@ p {
     background: #fdfdfc; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .ContainerBody {
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%; }
   .sectionMainTittle {
     width: 80%;
-    margin-right: 10px;
-    margin-left: 10px; }
+    align-items: center; }
   .maintitles_h1logo {
-    height: 200px;
-    width: 200px;
+    height: 40px;
+    width: 40px;
     margin-right: auto;
     margin-left: auto; }
   .maintitles_h1logo:hover {
-    height: 180px;
-    width: 180px;
-    padding: 20px; }
+    height: 30px;
+    width: 30px;
+    padding: 2%; }
   .maintitle_h1Index {
     width: 60%;
     margin-right: auto;
@@ -284,79 +248,63 @@ p {
   .navbar_sectionNavBar {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 20px;
+    margin: 2%;
     width: 80%; }
-  .navbar_linknav:hover {
-    color: #ececec; }
-  .navbar_lista1 {
-    list-style: none;
-    text-decoration: none;
-    list-style-type: none;
-    text-align: center;
-    background-color: #e6e6e6;
-    /* border: #c9c9c9 1px solid; */
-    border-radius: #c9c9c9 1px solid;
-    transition: all 1s; }
-  .navbar_lista1:hover {
-    background-color: #757575;
-    color: #c9c9c9; }
+  .nav-link:hover {
+    color: black; }
   .maintitles_carousel {
-    margin: 50px;
+    margin: 10%;
     justify-items: center;
     align-items: center;
-    width: 700px;
-    height: 500px; }
+    width: 80%;
+    height: auto; }
   .maintitles_sectionMainText {
     grid-template-columns: repeat(2, 1fr);
-    margin-right: 20px;
-    margin-left: 20px; }
+    margin-right: 5%;
+    margin-left: 5%; }
   .footerGeneral {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .footer_sectionMAP {
+    height: auto;
+    width: 60%; } }
 
 @media only screen and (min-width: 400px) and (max-width: 767px) {
-  .sectionMainTittle {
-    width: 80%;
-    margin-right: 10px;
-    margin-left: 10px; }
   .maintitles_h1logo {
-    height: 8px;
-    width: 8px;
-    margin: 5px;
     display: none; }
   .maintitle_h1Index {
-    width: 60%;
-    margin: 20px;
+    width: 80%;
+    margin: 2%;
     align-items: center; }
   .navbar_sectionNavBar {
     display: grid;
     grid-template-rows: repeat(1, 1fr);
     margin: 20px;
     width: 10%; }
-  .navbar_linknav:hover {
-    color: #ececec; }
-  .navbar_lista1 {
-    list-style: none;
-    text-decoration: none;
-    list-style-type: none;
-    text-align: center;
-    background-color: #e6e6e6;
-    /* border: #c9c9c9 1px solid; */
-    border-radius: #c9c9c9 1px solid;
-    transition: all 1s; }
-  .navbar_lista1:hover {
-    background-color: #757575;
-    color: #c9c9c9; }
+  .nav-link:hover {
+    color: black; }
+  p {
+    margin: 10%;
+    padding: 2%;
+    font-family: 'Montserrat', sans-serif; }
+  .maintitles_presentacionIndex {
+    display: grid;
+    /* grid-template-rows: 200px 100px; */
+    grid-template-rows: 20% 80%;
+    grid-template-areas: "h3 p";
+    justify-content: center;
+    align-items: center; }
   .maintitles_carousel {
-    margin: 20px;
+    margin: 2%;
     justify-items: center;
     align-items: center;
-    width: 500px;
-    height: 400px; }
+    width: 95%;
+    height: auto; }
   .maintitles_sectionMainText {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     margin: 10px; }
   .footerGeneral {
+    width: 100%;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 10% 25% 25% 40%;
@@ -365,7 +313,7 @@ p {
     align-items: center;
     justify-content: space-around; }
   .footer_h3 {
-    padding: 10px;
+    padding: 10%;
     font-weight: bolder;
     font-family: 'Roboto', sans-serif;
     /*  */
@@ -373,19 +321,62 @@ p {
     justify-items: start;
     align-items: left; }
   .footer_sectionDesc {
-    grid-area: desc; }
+    grid-area: desc;
+    padding: 2%; }
   .footer_sectionMAP {
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-area: map; } }
+    grid-area: map; }
+  .sectionMainProducto {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15%  15%  15%  15%  15%  15%;
+    grid-template-areas: "imgProductos1"  "imgProductos2" "imgProductos3"  "imgProductos4" "imgProductos5"  "imgProductos6"; }
+  .imgProductos1 {
+    padding: auto;
+    margin: 2%;
+    width: 90%;
+    align-items: center;
+    grid-area: imgProductos1; }
+  .imgProductos2 {
+    padding: auto;
+    margin: 2%;
+    width: 90%;
+    align-items: center;
+    grid-area: imgProductos2; }
+  .imgProductos3 {
+    padding: auto;
+    margin: 2%;
+    width: 90%;
+    align-items: center;
+    grid-area: imgProductos3; }
+  .imgProductos4 {
+    padding: auto;
+    margin: 2%;
+    width: 90%;
+    align-items: center;
+    grid-area: imgProductos4; }
+  .imgProductos5 {
+    padding: auto;
+    margin: 2%;
+    width: 90%;
+    align-items: center;
+    grid-area: imgProductos5; }
+  .imgProductos6 {
+    padding: auto;
+    margin: 2%;
+    width: 90%;
+    align-items: center;
+    grid-area: imgProductos6; } }
 
 /* PageAliados */
 .imgAliados1 {
   padding: auto;
-  margin: 40px 95px 40px 95px;
-  height: 300px;
-  width: 500px;
+  margin: 2%;
+  /*       height: 30%; */
+  width: 45%;
   display: inline;
   align-items: center;
   animation-duration: 2s;
@@ -406,30 +397,8 @@ p {
   100% {
     opacity: 1; } }
 
-.imgAliados2 {
-  padding: auto;
-  margin: 30px 30px 30px 30px;
-  height: 300px;
-  width: 450px;
-  display: inline;
-  align-items: center;
-  animation-name: logo_aliados_2;
-  animation-duration: 2s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: initial;
-  transform: translate(10px, 20px); }
-
-@keyframes logo_aliados_2 {
-  0% {
-    opacity: 0; }
-  20% {
-    opacity: 0.2; }
-  50% {
-    opacity: 0.5; }
-  80% {
-    opacity: 0.8; }
-  100% {
-    opacity: 1; } }
+.sectionLogos {
+  margin-bottom: 10%; }
 
 /* Variables */
 /* Ops */
@@ -478,7 +447,11 @@ p {
   animation-duration: 1s;
   animation-name: main_producto;
   animation-timing-function: ease-in;
-  animation-iteration-count: initial; }
+  animation-iteration-count: initial;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 35% 35% 35%;
+  grid-template-areas: "imgProductos1 imgProductos2" "imgProductos3 imgProductos4" "imgProductos5 imgProductos6"; }
 
 @keyframes main_producto {
   0% {
@@ -488,10 +461,45 @@ p {
 
 .imgProductos1 {
   padding: auto;
-  margin: 30px;
-  width: 45%;
-  display: inline;
-  align-items: center; }
+  margin: 2%;
+  width: 90%;
+  align-items: center;
+  grid-area: imgProductos1; }
+
+.imgProductos2 {
+  padding: auto;
+  margin: 2%;
+  width: 90%;
+  align-items: center;
+  grid-area: imgProductos2; }
+
+.imgProductos3 {
+  padding: auto;
+  margin: 2%;
+  width: 90%;
+  align-items: center;
+  grid-area: imgProductos3; }
+
+.imgProductos4 {
+  padding: auto;
+  margin: 2%;
+  width: 90%;
+  align-items: center;
+  grid-area: imgProductos4; }
+
+.imgProductos5 {
+  padding: auto;
+  margin: 2%;
+  width: 90%;
+  align-items: center;
+  grid-area: imgProductos5; }
+
+.imgProductos6 {
+  padding: auto;
+  margin: 2%;
+  width: 90%;
+  align-items: center;
+  grid-area: imgProductos6; }
 
 /* PageServicios */
 .video_servicios_1 {
@@ -504,7 +512,8 @@ p {
   animation-duration: 1s;
   animation-name: main_servicios;
   animation-timing-function: ease-in;
-  animation-iteration-count: initial; }
+  animation-iteration-count: initial;
+  margin-bottom: 10%; }
 
 @keyframes main_servicios {
   0% {
@@ -558,6 +567,15 @@ td {
   padding-left: 10px;
   font-weight: bolder;
   font-family: 'Roboto', sans-serif; }
+
+.ContainerBody {
+  margin-top: 1%;
+  margin-left: 5%;
+  margin-right: 5%; }
+
+form {
+  line-height: 2.5;
+  font-family: 'Montserrat', sans-serif; }
 
 body {
   background-color: white; }

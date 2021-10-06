@@ -14,5 +14,13 @@
     "nodemon": "^2.0.12"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scondoleo/mi_repositorio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/scondoleo/mi_repositorio/issues"
+  },
+  "homepage": "https://github.com/scondoleo/mi_repositorio#readme",
   "description": ""
 }
