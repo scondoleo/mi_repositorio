@@ -45,12 +45,19 @@ body {
     margin-left: auto;
   }
 
+  .collapse {
+    &:not(.show) {
+      display: none;
+    }
+  }
+
   .navbar_sectionNavBar {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       margin: 2%;
       width: 80%;
   }
+
 
   .nav-link:hover {
     color: black;

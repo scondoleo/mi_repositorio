@@ -12,34 +12,39 @@
     
     display: grid;
     grid-template-columns: 30% 30% 40%;
-    grid-template-rows: 10% auto;
+    grid-template-rows: 10% 90%;
     grid-template-areas: 
-    "h3Footer h3Footer h3Footer"
-    "desc redes map" 
+    "h3Footer h3Footer h3Footer" 
     "desc redes map";
     justify-items: center;
     align-items: center;
     justify-content: space-around;
+    padding: 2%;
     /*     grid-gap: 10px; */
     
     
     }
     
+.footer_sectionH3 {
+    margin: 10%;
+    width: 100%;
+    height: 100%;
+    grid-area: h3Footer;
+    justify-items: center;
+    margin: 10%;
+}
+
     .footer_h3 {
     font-weight: bolder;
     font-family: 'Roboto', sans-serif;
-    margin: 5%;
-    
-    /*  */
-    
-    grid-area: h3Footer;
-    justify-items: start;
-    align-items: left;
-    
+
+
     }
     
     .footer_sectionDesc {
         grid-area: desc;
+        width: 100%;
+        height: 80%;
     } 
     
 
@@ -47,6 +52,9 @@
         justify-items: center;
         align-items: center;
         grid-area: redes;
+        width: 100%;
+        height: 80%;
+        margin: 10%;
         }
         
         
@@ -77,7 +85,7 @@
     display: grid;
     justify-items: center;
     align-items: center;
-    
+    grid-area: map;    
     }
     
     .map .animate__shakeX {
